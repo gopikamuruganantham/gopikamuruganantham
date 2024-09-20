@@ -1,0 +1,329 @@
+/* styles.css */
+
+/* General Styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+/* Navbar Styles */
+header {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    top: 20px; /* Slightly below the top for a floating effect */
+    z-index: 1000;
+    padding: 0 20px; /* Padding to prevent the navbar from touching the edges */
+}
+
+.navbar {
+    background: #fff;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    padding: 10px 30px; /* Padding inside the navbar */
+    width: 90%; /* Make navbar smaller than full width */
+    max-width: 1200px; /* Maximum width for larger screens */
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo {
+    color: #333;
+    font-size: 1.6em;
+    font-weight: 600;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #ff69b4; /* Baby Pink Hover Background */
+    color: #fff; /* White text on hover */
+}
+ 
+
+
+
+.section {
+    padding: 100px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.home {
+    background-image: linear-gradient(to right, #ffb6c1, #ff69b4); /* Baby Pink Gradient */
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.home-content h1 {
+    font-size: 3.5em;
+    margin-bottom: 10px;
+}
+
+.home-content span {
+    color: #fff;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    background-color: #ff69b4; /* Baby Pink Button */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #ff1493; /* Darker Pink */
+}
+
+/* About Section */
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.profile-photo {
+    flex: 1;
+    text-align: center;
+}
+
+.profile-photo img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #ff69b4; /* Baby Pink Border */
+}
+
+.about-text {
+    flex: 2;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+/* Skills Section */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.skill-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.skill-item img {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 10px;
+}
+
+.skill-item p {
+    margin-top: 5px;
+    font-size: 1em;
+    color: #333;
+    font-weight: 500;
+}
+
+.skill-item:hover {
+    transform: scale(1.05);
+}
+
+/* GitHub Link Styles */
+.github-link {
+    text-align: center; /* Center align the GitHub link */
+    margin-top: 40px; /* Add margin for spacing */
+}
+
+.github-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.github-button img {
+    margin-right: 10px; /* Spacing between icon and text */
+    width: 30px;
+    height: 30px;
+}
+
+.github-button:hover {
+    background-color: #ff69b4; /* Hover background color */
+    transform: translateY(-3px); /* Slight lift effect on hover */
+}
+
+/* Projects Section */
+.project-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.project-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+/* Contact Section Styles */
+.contact {
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+}
+
+.contact .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact label {
+    font-weight: bold;
+}
+
+.contact input,
+.contact textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact button {
+    background-color: #ff69b4; /* Baby Pink */
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.contact button:hover {
+    background-color: #ff1493; /* Darker Pink */
+}
+
+
+/* Popup Message Styles */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1001;
+}
+
+.popup.active {
+    display: block;
+}
+
+.popup-button {
+    background: #ff69b4;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.popup-button:hover {
+    background-color: #ff1493;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #ff69b4; /* Baby Pink Hover Color */
+}
